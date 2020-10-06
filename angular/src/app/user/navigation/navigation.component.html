@@ -1,0 +1,88 @@
+!-- <title>MedKit</title>
+<base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body,html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+/*image slider ke liye*/
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*main image ke liye */
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("assets/images/main2.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+
+<body>
+  
+<!-- Links (sit on top)  -->
+<div class="w3-top" >
+  <div class="w3-row w3-padding w3-black" >
+    <div class="w3-col s3">
+        <ul>
+            <li><a routerLink="/home" routerLinkActive="active">Home</a></li> 
+          </ul>
+    </div>
+    <div class="w3-col s3">
+    <nav>
+      <ul>
+        <li><a routerLink="/tips" routerLinkActive="active">Tips</a></li> 
+      </ul>
+    </nav> 
+    </div>
+    <div class="w3-col s3">
+        <nav>
+            <ul>
+              <li><a routerLink="/shopping-cart" routerLinkActive="active">order</a></li> 
+            </ul>
+          </nav> 
+    </div>
+    <div class="w3-col s3">
+        <nav>
+            <ul>
+              <li><a routerLink="/signup" routerLinkActive="active">Signup</a></li> 
+            </ul>
+          </nav> 
+    </div>
+    
+  </div>
+
+  
+</div> 
+
